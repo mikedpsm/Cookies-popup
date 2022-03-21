@@ -1,0 +1,66 @@
+p {
+  margin: 0;
+}
+
+body {
+  height: 200vh;
+  background-color: #222;
+}
+
+.cookies-container {
+  color: #222;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+
+  position: fixed;
+  z-index: 1000;
+
+  width: 100%;
+  bottom: 2rem;
+}
+
+.cookies-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+
+  max-width: 520px;
+  min-width: 200px;
+  min-height: 90px;
+  border-radius: 5px;
+
+  padding: 1rem;
+  margin: 0 auto;
+  gap: 0.8rem;
+
+  transform: translateY(1rem);
+  opacity: 0;
+  animation: slideUp 2.5s forwards;
+}
+
+@keyframes slideUp {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+.cookies-pref label {
+  margin-right: 1rem;
+}
+
+.cookies-save {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  background-color: #007cf8;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 0.8rem;
+}
