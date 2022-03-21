@@ -1,4 +1,4 @@
-# Cookies-popup
+# Cookies Pop-up
 
 ## Repositório para prática de pop-up de cookies
 
